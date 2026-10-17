@@ -1,0 +1,15 @@
+<odoo>
+    <template id="custom_external_layout_header" inherit_id="web.external_layout_standard">
+
+        <!-- Replace Header Block -->
+        <xpath expr="//div[@t-attf-class='header o_company_#{company.id}_layout']"
+               position="replace">
+            <div t-attf-class="header o_company_#{company.id}_layout" style="text-align:center;">
+            <img src="/image_header/static/src/img/header.png"
+                 style="width:100%; max-height:120px; object-fit:contain;"/>
+
+            </div>
+        </xpath>
+
+    </template>
+</odoo>
